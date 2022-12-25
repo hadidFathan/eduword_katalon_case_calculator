@@ -17,45 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\Hadid Fathan Azisabi\\Downloads\\app-pendaki.apk', true)
-
-Mobile.pressBack()
-
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.pressBack()
-
-Mobile.swipe(300, 600, 200, 300)
-
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.swipe(300, 600, 200, 300)
-
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.scrollToText('Pendaki')
-
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Object Repository/Mobile/android.widget.TextView - Pendaki'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Mobile/ImageButton_pendaki'), 0)
-
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Object Repository/Mobile/android.widget.CheckedTextView - Peralatan'), 0)
-
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Object Repository/Mobile/android.widget.TextView - Tenda'), 0)
-
-Mobile.swipe(300, 600, 300, 300)
-
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Object Repository/Mobile/ImageButton_pendaki(1)'), 0)
-
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.startApplication('C:\\Users\\Hadid Fathan Azisabi\\Downloads\\Shop_Samsung.apk', true)
 
 Mobile.closeApplication()
 

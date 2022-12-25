@@ -17,45 +17,41 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\Hadid Fathan Azisabi\\Downloads\\app-pendaki.apk', true)
+Mobile.startApplication('C:\\Users\\Hadid Fathan Azisabi\\Downloads\\Shop_Samsung.apk', true)
 
-Mobile.pressBack()
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.swipe(600, 300, 200, 400)
 
-Mobile.pressBack()
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.swipe(300, 600, 200, 300)
+Mobile.swipe(600, 300, 200, 400)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Object Repository/Mobile/Samsung_shope_test/android.widget.ImageView (1)'), 0)
 
-Mobile.swipe(300, 600, 200, 300)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Object Repository/Mobile/Samsung_shope_test/android.widget.TextView - SHOP'), 0)
 
-Mobile.scrollToText('Pendaki')
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Object Repository/Mobile/Samsung_shope_test/android.widget.TextView'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Mobile/android.widget.TextView - Pendaki'), 0)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Mobile/ImageButton_pendaki'), 0)
+Mobile.setText(findTestObject('Object Repository/Mobile/Samsung_shope_test/android.widget.EditText - Search'), 'Samsung', 
+    0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Mobile/android.widget.CheckedTextView - Peralatan'), 0)
+Mobile.tap(findTestObject('Object Repository/Mobile/Samsung_shope_test/android.widget.TextView - Samsung Galaxy SmartTag, 1-Pack, Denim Blue'), 
+    0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Mobile/android.widget.TextView - Tenda'), 0)
+Mobile.tap(findTestObject('Mobile/Samsung_shope_test/BUY NOW'), 0)
 
-Mobile.swipe(300, 600, 300, 300)
-
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Object Repository/Mobile/ImageButton_pendaki(1)'), 0)
-
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(6, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 
